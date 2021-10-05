@@ -1,0 +1,9 @@
+---
+- name: Install AWX
+  hosts: all
+  become: true
+  tags:
+    - awx
+  roles:
+    - role: racqspace.awx
+...
